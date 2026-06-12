@@ -16,6 +16,21 @@ interface SettingsState {
   adminPassword: string;
 }
 
+interface SettingsField {
+  key: keyof SettingsState;
+  label: string;
+  placeholder: string;
+  help: string;
+  isTextarea?: boolean;
+  isPassword?: boolean;
+}
+
+interface SettingsSection {
+  title: string;
+  description: string;
+  fields: SettingsField[];
+}
+
 export default function AdminSettingsPage() {
   const [saved, setSaved] = useState(false);
   const [settings, setSettings] = useState<SettingsState>({
@@ -41,7 +56,7 @@ export default function AdminSettingsPage() {
     setSettings((prev) => ({ ...prev, [key]: value }));
   };
 
-  const SECTIONS = [
+  const SECTIONS: SettingsSection[] = [
     {
       title: "WhatsApp Configuration",
       description: "Controls all booking CTAs across the site",
