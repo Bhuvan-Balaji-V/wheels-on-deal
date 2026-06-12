@@ -1,7 +1,6 @@
 // app/page.tsx
 import type { Metadata } from "next";
 import Script from "next/script";
-import { HeroSection } from "@/components/home/HeroSection";
 import { FeaturedCars } from "@/components/home/FeaturedCars";
 import { LuxuryExperience } from "@/components/home/LuxuryExperience";
 import { UniversitySection } from "@/components/home/UniversitySection";
@@ -46,7 +45,6 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
       />
 
-      <HeroSection />
       <FeaturedCars />
       <LuxuryExperience />
       <WhatsAppCTA

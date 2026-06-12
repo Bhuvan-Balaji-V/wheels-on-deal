@@ -249,6 +249,106 @@ At Wheels On Deal, every Thar Roxx unit is premium-maintained, GPS-tracked for y
     ],
     badge: "New Launch",
   },
+  {
+    id: "maruti-suzuki-swift",
+    slug: "maruti-suzuki-swift",
+    name: "Maruti Suzuki Swift",
+    shortName: "Swift",
+    tagline: "Agile. Efficient. Perfect for the City.",
+    description:
+      "The Maruti Suzuki Swift — Bangalore's favourite compact car. Nimble, fuel-efficient, and perfect for city driving, college trips, or casual getaways. Self-drive comfort without the premium price tag.",
+    longDescription: `The Maruti Suzuki Swift is the smart choice for urban self-drive experiences in Bangalore. Built for city streets, yet capable enough for weekend escapes, the Swift combines reliability, efficiency, and affordability in one perfect package.
+
+Whether you're navigating Bangalore's traffic, heading to a casual meetup, or planning a budget-friendly weekend getaway to nearby towns, the Swift delivers on every count. With good fuel efficiency and easy maneuverability, the Swift is ideal for first-time self-drive renters and anyone looking for practical, cost-effective mobility.
+
+At Wheels On Deal, every Swift is regularly serviced, fully insured, and equipped with GPS navigation for your peace of mind.`,
+    images: {
+      hero: "/images/cars/swift-hero.avif",
+      gallery: [
+        "/images/cars/swift-gallery-1.jpg",
+        "/images/cars/swift-gallery-2.jpeg",
+        "/images/cars/swift-gallery-3.jpeg",
+        "/images/cars/swift-gallery-4.jpg",
+      ],
+      thumbnail: "/images/cars/swift-thumbnail.jpeg",
+    },
+    features: [
+      "Compact & Nimble Design",
+      "Excellent Fuel Efficiency",
+      "Easy City Navigation",
+      "ABS & Dual Airbags",
+      "Power Windows & Mirrors",
+      "USB Charging Port",
+      "GPS Navigation Ready",
+      "Full Insurance Covered",
+    ],
+    specifications: [
+      { label: "Engine", value: "1.2L Petrol Hybrid / VVT Petrol" },
+      { label: "Transmission", value: "Manual / Automatic (CVT)" },
+      { label: "Seating", value: "5 Adults" },
+      { label: "Fuel Type", value: "Petrol" },
+      { label: "Mileage", value: "18-23 km/l" },
+      { label: "Boot Space", value: "268 Litres" },
+    ],
+    highlights: [
+      "Perfect for city driving",
+      "Great fuel efficiency & low rental cost",
+      "Easy for first-time self-drive renters",
+      "Ideal for short trips & casual getaways",
+    ],
+    faqs: [
+      {
+        question: "Is the Swift good for beginners?",
+        answer:
+          "Absolutely! The Swift is one of the most beginner-friendly cars. It's easy to maneuver, has good visibility, and is perfect for navigating Bangalore traffic.",
+      },
+      {
+        question: "Can I take the Swift for outstation trips?",
+        answer:
+          "Yes, the Swift is suitable for outstation trips to nearby towns within 200-300 km. For longer trips, the SUVs (Thar/Thar Roxx) are better suited.",
+      },
+      {
+        question: "What is the mileage of the Swift?",
+        answer:
+          "The Maruti Suzuki Swift offers excellent fuel efficiency of 18-23 km/l depending on driving conditions. You'll get great value for your money.",
+      },
+      {
+        question: "Is the Swift suitable for couples or small groups?",
+        answer:
+          "Perfect! The Swift comfortably seats 5 and is ideal for couples or groups of 3-4 friends on a casual trip.",
+      },
+    ],
+    seo: {
+      title: "Maruti Suzuki Swift Rental Bangalore | Self-Drive Car | Wheels On Deal",
+      description:
+        "Rent Maruti Suzuki Swift in Bangalore for self-drive. Fuel-efficient, affordable, perfect for city drives & casual getaways. Book via WhatsApp instantly.",
+      keywords: [
+        "swift rental bangalore",
+        "maruti swift self drive bangalore",
+        "swift on rent bangalore",
+        "budget car rental bangalore",
+        "swift hire bangalore",
+      ],
+      schema: {
+        "@type": "Product",
+        name: "Maruti Suzuki Swift Self-Drive Rental",
+        description:
+          "Affordable Maruti Suzuki Swift available for self-drive rental in Bangalore",
+        brand: { "@type": "Brand", name: "Maruti Suzuki" },
+        offers: {
+          "@type": "Offer",
+          availability: "https://schema.org/InStock",
+          seller: { "@type": "Organization", name: "Wheels On Deal" },
+        },
+      },
+    },
+    relatedLocations: [
+      "koramangala-bangalore",
+      "indiranagar-bangalore",
+      "whitefield-bangalore",
+      "yelahanka-bangalore",
+    ],
+  },
 ];
 
 export function getCarBySlug(slug: string): Car | undefined {

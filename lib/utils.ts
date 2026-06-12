@@ -37,6 +37,7 @@ export const WA_MESSAGES = {
   thar: "Hi! I'd like to book the Mahindra Thar for self-drive from Wheels On Deal Bangalore. Please share availability and rates. 🚘",
   tharRoxx:
     "Hi! I'd like to book the Mahindra Thar Roxx (5-door) for self-drive from Wheels On Deal Bangalore. Please share details and availability. 🚙",
+  swift: "Hi! I'd like to book the Maruti Suzuki Swift for self-drive from Wheels On Deal Bangalore. Please share availability and rates. 🚗",
   nandi:
     "Hi! I'm planning a Nandi Hills road trip and want to rent a Thar from Wheels On Deal. Please share availability for this weekend. 🏔️",
   hero: "Hi! I found Wheels On Deal and want to rent a premium self-drive car in Bangalore. What's available? 🚗✨",

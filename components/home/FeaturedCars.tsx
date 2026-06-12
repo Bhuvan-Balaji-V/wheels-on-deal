@@ -65,10 +65,10 @@ export function FeaturedCars() {
         {/* Car cards grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {CARS.map((car, i) => {
-            const waMsg =
-              car.slug === "mahindra-thar"
-                ? WA_MESSAGES.thar
-                : WA_MESSAGES.tharRoxx;
+            let waMsg = WA_MESSAGES.general;
+            if (car.slug === "mahindra-thar") waMsg = WA_MESSAGES.thar;
+            else if (car.slug === "mahindra-thar-roxx") waMsg = WA_MESSAGES.tharRoxx;
+            else if (car.slug === "maruti-suzuki-swift") waMsg = WA_MESSAGES.swift;
             const waUrl = buildWhatsAppUrl(waMsg);
 
             return (
